@@ -14,19 +14,21 @@
         android:layout_marginStart="80dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="80dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/btn"
         android:fontFamily="@font/biryani_semibold"
         android:text="Mostrar frase"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMostrar" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMostrarFrase" />
 
     <TextView
-        android:id="@+id/txtMostrar"
+        android:id="@+id/txtMostrarFrase"
         android:layout_width="0dp"
         android:layout_height="208dp"
         android:layout_marginStart="40dp"
@@ -37,15 +39,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgFechado" />
+        app:layout_constraintTop_toBottomOf="@+id/imgBisFechado" />
 
     <ImageView
-        android:id="@+id/imgFechado"
+        android:id="@+id/imgBisFechado"
         android:layout_width="80dp"
         android:layout_height="75dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="50dp"
-        app:layout_constraintStart_toStartOf="@+id/txtMostrar"
+        app:layout_constraintStart_toStartOf="@+id/txtMostrarFrase"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/biscoito" />
 
@@ -54,9 +56,8 @@
         android:layout_width="0dp"
         android:layout_height="48dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="80dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/btn"
         android:fontFamily="@font/biryani_semibold"
         android:text="Voltar"
@@ -66,9 +67,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMostrarFrase"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView"

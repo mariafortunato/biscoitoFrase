@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mariafortunato.biscoito" >
+    package="com.mariafortunato.biscoito">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,10 @@
         android:label="biscoito"
         android:roundIcon="@mipmap/ic_launcher_biscoito_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Biscoito" >
+        android:theme="@style/Theme.Biscoito">
+        <activity
+            android:name=".MusicasActivity"
+            android:exported="false" />
         <activity
             android:name=".EngracadasActivity"
             android:exported="false" />
@@ -20,7 +23,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -16,9 +16,9 @@ class MotivacionaisActivity : AppCompatActivity() {
         binding = ActivityMotivacionaisBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnGerarFrase.setOnClickListener {
+        binding.btnMostraFrase.setOnClickListener {
             binding.imgFechado.setImageResource(R.drawable.biscoito_aberto)
-            val mostrarFrase = binding.txtMostrarFrase.text
+
             val frase = arrayListOf("O sucesso é a soma de pequenos esforços repetidos dia após dia – Robert Collier, escritor.",
                 "Nunca é tarde para ser o que você poderia ter sido – George Eliot, escritora",
                 "Não desperdice sua energia tentando mudar opiniões. Faça seu trabalho e não ligue tanto para os outros – Tina Fey, atriz e apresentadora",
@@ -35,8 +35,7 @@ class MotivacionaisActivity : AppCompatActivity() {
                 "Valorize as pequenas conquistas.", "Não é fácil, mas com a dose certa de motivação, a gente conquista!")
             val numAleatorio = (0..14).random()
 
-            binding.imgFechado.setBackgroundResource(R.drawable.biscoito_aberto)
-            binding.txtMostrarFrase.text = "${frase[numAleatorio]}"
+            binding.txtMostraFrase.text = "${frase[numAleatorio]}"
 
         }
         binding.btnVoltar.setOnClickListener {

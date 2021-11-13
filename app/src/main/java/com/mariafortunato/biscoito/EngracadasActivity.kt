@@ -19,9 +19,8 @@ class EngracadasActivity : AppCompatActivity() {
 
         binding.btnMostrarFrase.setOnClickListener {
 
-            binding.imgFechado.setImageResource(R.drawable.biscoito_aberto)
+            binding.imgBisFechado.setImageResource(R.drawable.biscoito_aberto)
 
-            val mostrarFrase = binding.txtMostrar.text
             val frase = arrayListOf("Tem gente que se acha tanto que tá merecendo virar localização no Google Maps.",
                 "Lamento, só estou aceitando pedidos de desculpa em dinheiro.",
                 "Não siga as minhas pegadas, eu também estou perdido.", "Um sonho: ganhar dinheiro dormindo.",
@@ -40,7 +39,7 @@ class EngracadasActivity : AppCompatActivity() {
             val numAleatorio = (0..14).random()
 
 
-            binding.txtMostrar.text = "${frase[numAleatorio]}"
+            binding.txtMostrarFrase.text = "${frase[numAleatorio]}"
 
         }
         binding.btnVoltar.setOnClickListener {

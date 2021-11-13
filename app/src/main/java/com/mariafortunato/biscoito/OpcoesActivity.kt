@@ -24,5 +24,9 @@ class OpcoesActivity : AppCompatActivity() {
             val engracadas = Intent(this, EngracadasActivity::class.java)
             startActivity(engracadas)
         }
+        binding.btnMusicas.setOnClickListener {
+            val musicas = Intent(this, MusicasActivity::class.java)
+            startActivity(musicas)
+        }
     }
 }
