@@ -43,10 +43,11 @@
 
     <ImageView
         android:id="@+id/imgBisFechado"
-        android:layout_width="80dp"
-        android:layout_height="75dp"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="50dp"
+        android:rotation="-24"
         app:layout_constraintStart_toStartOf="@+id/txtMostrarFrase"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         app:srcCompat="@drawable/biscoito" />

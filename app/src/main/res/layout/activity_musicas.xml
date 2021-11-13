@@ -75,10 +75,11 @@
 
     <ImageView
         android:id="@+id/imgBiscoitoFechado"
-        android:layout_width="80dp"
-        android:layout_height="75dp"
+        android:layout_width="65dp"
+        android:layout_height="60dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="50dp"
+        android:rotation="-24"
         app:layout_constraintStart_toStartOf="@+id/txtAparecerFrase"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
         app:srcCompat="@drawable/biscoito" />
