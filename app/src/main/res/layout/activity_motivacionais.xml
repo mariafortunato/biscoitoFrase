@@ -63,11 +63,11 @@
 
     <ImageView
         android:id="@+id/imgFechado"
-        android:layout_width="65dp"
+        android:layout_width="85dp"
         android:layout_height="60dp"
         android:layout_marginStart="124dp"
         android:layout_marginTop="48dp"
-        android:rotation="17"
+        android:rotation="0"
         android:rotationX="0"
         android:rotationY="0"
         app:layout_constraintStart_toStartOf="@+id/txtMostraFrase"
