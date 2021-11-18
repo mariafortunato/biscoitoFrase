@@ -47,6 +47,5 @@ class EngracadasActivity : AppCompatActivity() {
             startActivity(mIntent)
         }
 
-
     }
 }
